@@ -6,10 +6,18 @@
  */
 int main(void)
 {
-    int n;
-    for (n = 0*0; n <= 16; n++)
+    char ch = '0';
+    char c = 'a';
+    while(ch <= '9')
     {
-       putchar((n%10 + '0')); 
+       putchar(ch);
+       ch++;
+    }
+
+    while (c <= 'f')
+    {
+        putchar(c);
+        c++;
     }
     putchar('\n');
     return(0);
