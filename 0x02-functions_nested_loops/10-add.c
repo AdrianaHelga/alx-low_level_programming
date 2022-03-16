@@ -1,10 +1,13 @@
-#include<stdio.h>
+#include "main.h"
 /**
- * main - entry point
- * description: prints _putchar, followed by a new line
- * return: 0 
+ * add - returns the sum of its parameters
+ * @a: int type number
+ * @b: int type number
+ * Return:0
  */
-int main (void){
-    
-    return (0);
+
+
+int add(int a, int b)
+{
+return (a + b);
 }

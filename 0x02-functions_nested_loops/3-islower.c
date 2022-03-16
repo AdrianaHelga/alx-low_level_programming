@@ -1,10 +1,13 @@
-#include<stdio.h>
+#include "main.h"
+
 /**
- * main - entry point
- * description: prints _putchar, followed by a new line
- * return: 0 
+ * description: _islower - check for lower case letter
+ * @c : character to check the case
+ * Return:0 (success) or 1
  */
-int main (void){
-    
-    return (0);
+
+int _islower(int c)
+{
+	return (c >= 97 && c <= 122);
+
 }

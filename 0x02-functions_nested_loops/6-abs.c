@@ -1,10 +1,14 @@
-#include<stdio.h>
+#include "main.h"
+
 /**
- * main - entry point
- * description: prints _putchar, followed by a new line
- * return: 0 
+ * _abs - return abs value
+ * @n : number to check
+ * Return:0 or 1
  */
-int main (void){
-    
-    return (0);
+
+int _abs(int n)
+{
+
+return (n >= 0 ? n : n * -1);
+
 }
