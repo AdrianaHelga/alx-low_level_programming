@@ -2,7 +2,7 @@
 
 /**
  * print_square - function that prints a square, followed by a new line
- * @n : number of # to be printed
+ * @size : number of # to be printed
  * Return:void
  */
 
