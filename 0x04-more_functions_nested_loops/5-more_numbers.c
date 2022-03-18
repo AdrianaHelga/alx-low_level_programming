@@ -1,17 +1,27 @@
 #include "main.h"
 
 /**
- * more_numbers: prints 10 times the numbers, from 0 to 14, followed by a new line.
- * @ch: variable to be multiplied  
+ * more_numbers - prints 10 times the numbers, from 0 to 14
+ * followed by a new line.
  * return : 0 (success)
  */
 
 void more_numbers(void)
 {
-char n = '0';
-while (n <= '14')
+int i, j;
+
+i = 0;
+while (i < 10)
 {
-    _putchar(n);
-    n++;
+j = 0;
+while (j < 15)
+{
+if (j >= 10)
+_putchar('0' + j / 10);
+_putchar('0' + j % 10);
+j++;
+}
+_putchar('\n');
+i++;
 }
 }

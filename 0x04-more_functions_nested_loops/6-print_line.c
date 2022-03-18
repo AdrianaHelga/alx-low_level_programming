@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * print_line: function that draws a straight line in the terminal.
- * @ch: character used to draw line.
- * return: 0 (success)
+ * print_line - function that draws a straight line in the terminal.
+ * @n: the number of times the character _ should be printed
+ * Return: 0 (success)
  */
 
 void print_line(int n)
 {
-char ch = '-';
-if ( n > 0)
+int i = 0;
+while (i < n && n > 0)
 {
-    _putchar(ch);
+_putchar('_');
+i++;
 }
-else if (n == 0)
-{
-    _putchar('\n');
-}
+
+_putchar('\n');
+
 }
