@@ -9,20 +9,22 @@
 void print_square(int n)
 {
 
-int i = 0, ii;
+int i, j;
 
-while (i < n && n > 0)
+if (n <= 0)
 {
-ii = 0;
-while (ii < n)
+_putchar('\n');
+}
+else
+{
+for (i = 1; i <= n; i++)
 {
 _putchar('#');
-ii++;
+for (j = 1; j < n; j++)
+{
+_putchar('#');
 }
 _putchar('\n');
-i++;
 }
-if (i == 0)
-_putchar('\n');
-
+}
 }
