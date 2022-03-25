@@ -7,26 +7,26 @@
  */
 int main(void)
 {
-    int i;
-    int j;
-    int k;
-    int l;
-    for(i = 0; i < 10; i++)
+    int a;
+    int b;
+    int c;
+    int d;
+    for(a = 0; a < 10; a++)
     {
-        for(j = 0; j < 9; j++)
+        for(b = 0; b < 9; b++)
         {
-            for(k = 0; k < 10; k++)
+            for(c = 0; c < 10; c++)
             {
-                for(l = 0; l < 10; l++)
+                for(d = 0; d < 10; d++)
                 {
-                    if(!(l == i && k == j))
+                    if((!(a == d && c == b)) && c >= a && d >= b && b != d)
                     {
-                        putchar(i%10 + '0');
-                        putchar(j%10 + '0');
+                        putchar(a%10 + '0');
+                        putchar(b%10 + '0');
                         putchar(' ');
-                        putchar(k%10 + '0');
-                        putchar(l%10 + '0');
-                        if(!(l + j == 18 && i + j == 17 && j == 9))
+                        putchar(c%10 + '0');
+                        putchar(d%10 + '0');
+                        if(!(b + d == 18 && a + b == 17 && b == 9))
                         {
                             putchar(',');
                             putchar(' ');
