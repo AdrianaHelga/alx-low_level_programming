@@ -1,19 +1,16 @@
 #include "main.h"
 /**
-  *_strlen_recursion - returns lenght of a string.
-  *@s: pointer to string.
+  *factorial - returns factorial of a given number.
+  *@n: number to find  factorial of.
   *
-  *Return: lenght of string.
+  *Return: factorial of number
+  *-1 if n < 0.
   */
-int _strlen_recursion(char *s)
+int factorial(int n)
 {
-if (*s)
-{
-return (1 + _strlen_recursion(s + 1));
-}
-else
-{
-return (0);
-
-}
+	if (n < 0)
+		return (-1);
+	if (n == 0 || n == 1)
+		return (1);
+	return (n * factorial(n - 1));
 }
