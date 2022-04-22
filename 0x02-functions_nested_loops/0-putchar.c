@@ -5,7 +5,7 @@
  *
  * program that prints _putchar followed by newline
  *
- * Return: nothing
+ * Return: 0(success)
  */
 
 int main(void)
@@ -13,7 +13,7 @@ int main(void)
 char c[9] = "_putchar";
 int n;
 
-for (n = 0; n < 9;)
+for (n = 0; n < 8;)
 {
 _putchar(c[n]);
 n++;
