@@ -1,19 +1,24 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Return:0
+ * main - entry point
+ *
+ * program that prints _putchar followed by newline
+ *
+ * Return: nothing
  */
 
 int main(void)
 {
 char c[9] = "_putchar";
-int i = 0;
-while (i < 8)
+int n;
+
+for (n = 0; n < 9;)
 {
-_putchar(c[i]);
-i++;
+_putchar(c[n]);
+n++;
 }
+
 _putchar('\n');
 return (0);
 }
