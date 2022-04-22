@@ -6,6 +6,7 @@
  * Returns: nothing
  */
 
+/**/
 void times_table(void)
 {
     int a, b;
@@ -24,7 +25,7 @@ void times_table(void)
             }
             else
             {
-            _putchar(' ');
+            /*_putchar(' ');*/
             _putchar(result % 10 + '0');
             }
             if(b != 9)
