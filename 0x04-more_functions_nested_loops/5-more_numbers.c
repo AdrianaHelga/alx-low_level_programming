@@ -18,13 +18,13 @@ b = 0;
 while (b <= 14)
 {
 
-if ( b > 9)
+if (b > 9)
 {
 _putchar(b / 10 + '0');
 }
 
 _putchar(b % 10 + '0');
-b++;  
+b++;
 }
 
 _putchar('\n');
