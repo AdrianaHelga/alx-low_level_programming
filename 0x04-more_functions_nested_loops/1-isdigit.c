@@ -1,12 +1,18 @@
 #include "main.h"
 
 /**
- * _isdigit - checks for uppercase letter
+ * _isdigit - checks for digit
+ *
  * @c: characher to be checked
- * Return:0 or 1
+ *
+ * Return: 0(digit) or 1(otherwise)
  */
 
 int _isdigit(int c)
 {
-return (c >= 48 && c <= 57); /*specify ASCII digits*/
+if (c >= 48 && c <= 57)
+return (1);
+
+else
+return (0);
 }

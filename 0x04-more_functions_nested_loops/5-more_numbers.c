@@ -3,25 +3,31 @@
 /**
  * more_numbers - prints 10 times the numbers, from 0 to 14
  * followed by a new line.
- * return : 0 (success)
+ *
+ * Return : nothing
  */
 
 void more_numbers(void)
 {
-int i, j;
+int a, b;
 
-i = 0;
-while (i < 10)
+a = 0;
+while (a < 10)
 {
-j = 0;
-while (j < 15)
+b = 0;
+while (b <= 14)
 {
-if (j >= 10)
-_putchar('0' + j / 10);
-_putchar('0' + j % 10);
-j++;
+
+if ( b > 9)
+{
+_putchar(b / 10 + '0');
 }
+
+_putchar(b % 10 + '0');
+b++;  
+}
+
 _putchar('\n');
-i++;
+a++;
 }
 }
