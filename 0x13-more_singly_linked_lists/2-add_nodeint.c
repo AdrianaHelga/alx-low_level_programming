@@ -4,7 +4,7 @@
   * @head: pointer to pointer of first element.
   * @n: elements to be added.
   *
-  * Return: addres of new element or NULL.
+  * Return: address of new element or NULL.
   */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
